@@ -15,9 +15,11 @@ public class Application {
 
 		SpringApplication application = new SpringApplication(Application.class);
 
-		ConfigurableEnvironment env = new StandardEnvironment();
-		env.setActiveProfiles("spring.profiles.active", "prod");
-		application.setEnvironment(env);
+//		ConfigurableEnvironment env = new StandardEnvironment();
+//		env.setActiveProfiles("spring.profiles.active", "prod");
+//		application.setEnvironment(env);
+
+		application.setAdditionalProfiles("prod");
 
 		application.run(args);
 	}
