@@ -25,7 +25,7 @@ public class DatasourceConfiguration {
 
 
     @Bean
-    @Profile("dev")
+    @Profile("dev")     // applicable on class too
     public void devEnvironmentSetup(){
         System.out.println("[DEV] - Environment");
         System.out.println(driverClassName);
